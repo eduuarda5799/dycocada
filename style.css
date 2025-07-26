@@ -1,0 +1,329 @@
+Body { 
+
+    Margin: 0; 
+
+    Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif; 
+
+    Background: #fff; 
+
+    Color: #5c1c1c; 
+
+} 
+
+ 
+
+Header { 
+
+    Background: white; 
+
+    Color: #a30000; 
+
+    Padding: 20px; 
+
+    Text-align: center; 
+
+} 
+
+ 
+
+Header h1 { 
+
+    Margin: 0; 
+
+    Font-size: 2em; 
+
+} 
+
+ 
+
+.logo { 
+
+    Max-width: 150px; 
+
+    Margin-bottom: 10px; 
+
+} 
+
+ 
+
+Main { 
+
+    Padding: 20px; 
+
+    Text-align: center; 
+
+} 
+
+ 
+
+.slogan { 
+
+    Font-size: 1.2em; 
+
+    Margin-bottom: 30px; 
+
+} 
+
+ 
+
+.produtos { 
+
+    Display: grid; 
+
+    Grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+
+    Gap: 20px; 
+
+    Max-width: 800px; 
+
+    Margin: 0 auto 40px auto; 
+
+} 
+
+ 
+
+.produto { 
+
+    Border: 1px solid #a30000; 
+
+    Border-radius: 10px; 
+
+    Padding: 15px; 
+
+} 
+
+ 
+
+.produto h3 { 
+
+    Margin-top: 0; 
+
+} 
+
+ 
+
+Footer { 
+
+    Background: #a30000; 
+
+    Color: white; 
+
+    Text-align: center; 
+
+    Padding: 20px; 
+
+} 
+
+ 
+
+.contato a { 
+
+    Color: white; 
+
+    Text-decoration: none; 
+
+    Margin: 0 10px; 
+
+    Display: inline-block; 
+
+} 
+
+ 
+
+.contato a:hover { 
+
+    Text-decoration: underline; 
+
+} 
+
+ 
+
+.botao-whatsapp { 
+
+    Display: inline-block; 
+
+    Background: #25D366; 
+
+    Color: white; 
+
+    Padding: 10px 20px; 
+
+    Border-radius: 30px; 
+
+    Text-decoration: none; 
+
+    Margin-top: 20px; 
+
+} 
+
+ 
+
+.botao-whatsapp:hover { 
+
+    Background: #1ebe57; 
+
+} 
+
+.galeria { 
+
+    Padding: 20px; 
+
+    Background: #fff5f5; 
+
+    Text-align: center; 
+
+} 
+
+ 
+
+.galeria h2 { 
+
+    Margin-bottom: 20px; 
+
+    Color: #a30000; 
+
+} 
+
+ 
+
+.fotos { 
+
+    Display: grid; 
+
+    Grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+
+    Gap: 15px; 
+
+    Max-width: 800px; 
+
+    Margin: 0 auto; 
+
+} 
+
+ 
+
+.fotos img { 
+
+    Width: 100%; 
+
+    Border-radius: 10px; 
+
+    Border: 2px solid #a30000; 
+
+    Transition: transform 0.3s ease; 
+
+} 
+
+ 
+
+.fotos img:hover { 
+
+    Transform: scale(1.05); 
+
+} 
+.galeria {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.carrossel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: fit-content;
+}
+
+.carrossel img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.esquerda {
+    left: 10px;
+}
+
+.direita {
+    right: 10px;
+}.linha-personalizada {
+    border: none;
+    height: 2px;
+    background-color:#a30000; /* exemplo: dourado */
+    margin: 40px auto;
+    width: 80%; /* ou 100% se quiser ocupar toda a largura */
+  }
+  .logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .produto {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .logo
+  
+    .produtos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carrossel-btn {
+      font-size: 1.5rem;
+      padding: 3px 8px;
+    }
+  }
+  .carrossel-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carrossel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  
+
+
+ 
