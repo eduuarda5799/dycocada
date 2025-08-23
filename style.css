@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --red: #B3131B;
     --cocoa: #5E3A28;
@@ -356,3 +357,174 @@
     }
   }
   
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff8f6;
+    color: #5c1c1c;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  .linha-personalizada {
+    width: 80%;
+    height: 2px;
+    background-color: #a30000;
+    margin: 20px auto;
+    border: none;
+  }
+  
+  .slogan {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #a30000;
+    margin: 20px 0 30px;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+  }
+  
+  .produto {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #a30000;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .produto h3 {
+    color: #a30000;
+    margin-bottom: 10px;
+  }
+  
+  /* Galeria */
+  .galeria {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .carrossel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .carrosel {
+    display: inline-flex;
+    gap: 15px;
+  }
+  
+  .carrosel img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #a30000;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .carrosel img:hover {
+    transform: scale(1.05);
+  }
+  
+  .carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .esquerda {
+    left: 10px;
+  }
+  
+  .direita {
+    right: 10px;
+  }
+  
+  .botao-whatsapp {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+  }
+  
+  .botao-whatsapp:hover {
+    background: #1ebe57;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #a30000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contato a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .contato a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .produtos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carrosel img {
+      width: 250px;
+    }
+  
+    .carrossel-btn {
+      font-size: 1.5rem;
+      padding: 5px 8px;
+    }
+  }
+  
+    
+>>>>>>> 2da8ed806abc69bf963759b5d939026c4782a0b2
